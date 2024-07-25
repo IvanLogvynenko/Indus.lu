@@ -1,0 +1,11 @@
+.vscode/
+.idea/
+
+out/
+*.out
+
+tmp/
+temp/
+
+*.tmp
+*.temp
