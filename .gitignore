@@ -9,3 +9,5 @@ temp/
 
 *.tmp
 *.temp
+
+__py*__/
