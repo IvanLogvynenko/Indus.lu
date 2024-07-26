@@ -27,6 +27,7 @@ dependencies {
     // This dependency is used by the application.
     implementation libs.guava
 
+    implementation 'org.springframework.boot:spring-boot-starter-jetty'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
@@ -34,6 +35,8 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+
+    implementation 'org.json:json:20230227'
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -45,7 +48,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = 'com.ivanlogvynenko.ddns.net'
+    mainClass = 'com.ivanlogvynenko.ddns.net.Main'
 }
 
 tasks.named('test') {
